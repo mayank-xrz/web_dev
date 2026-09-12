@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>College Notice Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+   
+    margin: 0;
+  }
+
+  #college-header {
+    text-align: center;
+    padding: 1rem;
+    
+  }
+
+  #college-header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+ 
+  }
+
+  .notice-board {
+    width: 60%;
+    margin: 20px auto;
+    border: 2px solid #333;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+
+  .notice-board .notice-title {
+    text-align: center;
+   
+  }
+
+  .notice {
+    display: block;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px red;
+    line-height: 1.5;
+  }
+
+  .notice h3 {
+    margin: 0;
+   
+  }
+
+  .read-more {
+    display: inline-block;
+    padding: 8px 16px;
+    border: none;
+   
+    color: red;
+    cursor: pointer;
+  }
+
+  .read-more:hover {
+ 
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem;
+    color: red;
+   
+  }
+</style>
+</head>
+<body>
+
+  <header id="college-header">
+    <h1>ABC ENGINEERING COLLEGE</h1>
+    <h2>Department of Computer Science</h2>
+  </header>
+
+  <section class="notice-board">
+    <h2 class="notice-title">Important Notices</h2>
+
+    <div class="notice">
+      <h3>1. Internal Assessment</h3>
+      <p>Date: 10 September 2026</p>
+      <button class="read-more">Read More</button>
+    </div>
+
+    <div class="notice">
+      <h3>2. Web Development Lab</h3>
+      <p>Date: 12 September 2026</p>
+      <button class="read-more">Read More</button>
+    </div>
+
+    <div class="notice">
+      <h3>3. Student Workshop</h3>
+      <p>Date: 15 September 2026</p>
+      <button class="read-more">Read More</button>
+    </div>
+  </section>
+
+  <footer>Department of CSE</footer>
+
+</body>
+</html>

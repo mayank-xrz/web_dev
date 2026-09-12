@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+
+    <form >
+        <label > name: </label>
+        <input type="text" name="username">
+        <br>  <br>
+
+        <label > father name: </label>
+        <input type="text"name="userfname">
+        <br>  <br>
+
+
+
+
+        <label  > age: </label>
+        <input type="number" name="usernameage" >
+        <br> <br>
+
+        <label > password</label>
+        <input type="password">
+        <br> <br>
+        
+        <label for="male">male</label>
+        <input type="radio" name = "gender" id="male" value="male">
+
+          <label for="female">female</label>
+        <input type="radio" name = "gender" id="female" value="female">
+
+        <label for="other"> other</label>
+        <input type="radio" name = "gender" id="other" value="other">
+
+        <br><br>
+
+       <!-- This is the first checkbox for the subject "C++" -->
+<input type="checkbox" name="subjects" id="cpp" value="C++">
+<!-- 
+  type="checkbox" => creates a checkbox input
+  name="subjects" => groups all checkboxes together under one name
+  id="cpp" => unique ID used by the label
+  value="C++" => the value sent to the server if this checkbox is selected
+-->
+
+<!-- This label is connected to the checkbox with id="cpp" -->
+<label for="cpp">C++</label>
+<!-- 
+  for="cpp" => when clicked, it selects the checkbox with id="cpp"
+  text inside label appears as the visible option name
+-->
+
+<!-- This is the second checkbox for the subject "Java" -->
+<input type="checkbox" name="subjects" id="java" value="Java">
+<!-- 
+  Same as above: it is a checkbox, grouped with other subjects,
+  and sends value "Java" if selected
+-->
+
+<label for="java">Java</label>
+<!-- Connects the visible text "Java" to the checkbox with id="java" -->
+
+<!-- This is the third checkbox for the subject "Python" -->
+<input type="checkbox" name="subjects" id="python" value="Python">
+<!-- 
+  name is the same for all checkboxes so they belong to one group
+  value is what gets submitted to the server
+-->
+
+<label for="python">Python</label>
+<!-- Clicking this label checks/unchecks the "python" checkbox -->
+
+<!-- This is the fourth checkbox for the subject "JavaScript" -->
+<input type="checkbox" name="subjects" id="js" value="JavaScript">
+<!-- 
+  type="checkbox" makes it optional
+  name="subjects" keeps all choices together as one group
+-->
+
+<label for="js">JavaScript</label>
+<!-- Connects the label text to checkbox id="js" -->
+
+<br><br>
+
+
+
+        <input type="submit">
+
+    </form>
+    
+</body>
+</html>

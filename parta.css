@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: #f2f5f9;
+  color: #222222;
+}
+
+#college-header {
+  width: 100%;
+  padding: 3rem 5%;
+  margin: 0;
+  border: none;
+  text-align: center;
+  background-color: rgb(31, 78, 121);
+  color: #ffffff;
+}
+
+#college-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#college-header p {
+  margin: 0.5rem 0 0;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.notice-section {
+  width: 90%;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 2px solid #d9e2ec;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.notice-section h2 {
+  text-align: center;
+  color: red;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 0 1.5rem;
+}
+
+.notice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid #cbd5e1;
+  border-left: 5px solid #1f4e79;
+  background-color: rgba(31, 78, 121, 0.06);
+}
+
+.notice h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1f2937;
+  text-align: left;
+}
+
+.notice p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #475569;
+  text-align: left;
+}
+
+.read-more {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #1f4e79;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.read-more:hover {
+  background-color: #163a5b;
+  transform: translateY(-2px);
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: #17202a;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+@media (max-width: 600px) {
+  .notice {
+    display: block;
+  }
+  .read-more {
+    margin-top: 0.75rem;
+  }
+}

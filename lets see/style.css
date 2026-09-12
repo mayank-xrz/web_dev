@@ -1,0 +1,30 @@
+h1{
+    background-color: olive;
+    height: 200px;
+    width: 300px;
+
+    /* border-width: 10px;
+    border-style: solid;
+    border-color: firebrick; */
+   
+  border: 10px solid rgb(128, 0, 64);
+  padding: 20px;
+  margin: 40px;
+
+}
+h2{
+    background-color: pink;
+
+    height: 80px;
+    width: 180px;
+     border: 10px solid rgb(128, 0, 64);
+     border-radius: 5000000px;
+  padding: 20px;
+ 
+
+    
+    
+
+
+    
+}

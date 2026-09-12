@@ -1,0 +1,38 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+div{
+    background-color: aquamarine ;
+    height: 1200px;
+
+}
+
+
+
+
+h2{
+    background-color: pink;
+    position: relative;
+    left: 209px;
+    top: 50px;
+}
+h3{
+    background-color: lawngreen;
+    position: fixed;
+}
+h4{
+    background-color: brown;
+    height: 25px;
+    position: sticky;
+    top: 10px;
+
+}
+p{
+    background-color: chocolate;
+    position: absolute;
+    top: 200px;
+
+}

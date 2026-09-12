@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+}
+
+
+
+
+
+
+
+.container{
+    background-color: white;
+    display: flex;
+    flex-direction: row ;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    /* margin: 5px; */
+}
+.first{
+    background-color: rgb(250, 4, 4);
+    /* border-radius: 50%; */
+    flex-grow: 1;
+}
+.sceond{
+    background-color: blue;
+    flex-grow: 2 ;
+}
+.third{
+    background-color: rgb(42, 163, 165);
+}
+.fourth{
+    background-color: blueviolet;
+}

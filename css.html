@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Computer Science Department - Styled</title>
+    <style>
+        /* Element selector */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        h2, h3 {
+            color: #14213d;
+        }
+
+        /* ID selector - header */
+        #main-header {
+            background-color: #14213d;
+            color: white;
+            padding: 15px 20px;
+            border-bottom: 4px solid #fca311;
+        }
+
+        #main-header img {
+            width: 50px;
+            vertical-align: middle;
+        }
+
+        /* Class selector - navigation */
+        .main-nav {
+            background-color: #fca311;
+            padding: 10px 20px;
+            margin: 0;
+        }
+
+        .main-nav a {
+            color: #14213d;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* Box model applied to main content sections */
+        .content-section {
+            margin: 15px 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            width: 60%;
+            background-color: #f7f7f7;
+        }
+
+        /* Class selector - aside */
+        .notices {
+            margin: 15px 20px;
+            padding: 15px;
+            border: 2px dashed #fca311;
+            width: 30%;
+            background-color: #fff8ec;
+        }
+
+        /* ID selector - footer */
+        #main-footer {
+            background-color: #14213d;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <img src="college-logo.png" alt="College Logo">
+        <h1>ABC College of Engineering</h1>
+    </header>
+
+    <nav class="main-nav">
+        <a href="#home">Home</a> |
+        <a href="#about">About</a> |
+        <a href="#courses">Courses</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <h2>Department of Computer Science</h2>
+
+        <section id="about" class="content-section">
+            <article>
+                <h3>About the Department</h3>
+                <p>The Department of Computer Science is committed to providing quality education in computer science and engineering, with a focus on emerging technologies such as AI, web development, and data systems.</p>
+            </article>
+        </section>
+
+        <section id="courses" class="content-section">
+            <article>
+                <h3>Courses Offered</h3>
+                <ul>
+                    <li>B.Tech in Computer Science</li>
+                    <li>B.Tech in Artificial Intelligence</li>
+                    <li>M.Tech in Computer Science</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="content-section">
+            <article>
+                <h3>Faculty Information</h3>
+                <p>Our department has experienced faculty members specializing in AI, software engineering, databases, and networks.</p>
+            </article>
+        </section>
+    </main>
+
+    <aside class="notices">
+        <h3>Important Notices</h3>
+        <ul>
+            <li>Semester exams start from 1st December</li>
+            <li>Project submissions due by 20th November</li>
+        </ul>
+    </aside>
+
+    <footer id="main-footer">
+        <p>&copy; 2026 ABC College of Engineering</p>
+    </footer>
+</body>
+</html>

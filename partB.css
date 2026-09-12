@@ -1,0 +1,96 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #222;
+  line-height: 1.6;
+}
+#dashboard-header {
+  min-height: 35vh;
+  padding: 4rem 5%;
+  text-align: center;
+  color: white;
+  background-color: #243b53;
+  background-image:
+    linear-gradient(rgba(36, 59, 83, 0.82), rgba(36, 59, 83, 0.82)),
+
+  
+}
+#dashboard-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#dashboard-header p {
+  margin-top: 0.75rem;
+  font-size: 1.1rem;
+}
+.events-container {
+  width: 92%;
+  margin: -3rem auto 2rem;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.event-card {
+  width: 30%;
+  min-width: 260px;
+  padding: 1.5rem;
+  margin: 0.5rem;
+  border: 1px solid #d9e2ec;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.10);
+}
+.event-card h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  color: #243b53;
+}
+.event-date {
+  font-weight: bold;
+  color: #ff0000d3;
+}
+.category {
+  display: inline-block;
+  margin: 0.5rem 0 1rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 20px;
+  background: #e8eef5;
+  color: #243b53;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.event-card p {
+  font-size: 0.95rem;
+}
+.register-btn {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.65rem 16px;
+  border: 0;
+  border-radius: 6px;
+  background: #243b53;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.register-btn:hover {
+  background: #102a43;
+  transform: scale(1.03);
+}
+footer {
+  padding: 1.25rem;
+  text-align: center;
+  background: #102a43;
+  color: white;
+}
+@media (max-width: 800px) {
+  .event-card { width: 90%; }
+}

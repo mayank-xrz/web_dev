@@ -1,0 +1,39 @@
+/* ul{
+    background-color: chocolate;
+}
+/* selection on basis of id  */
+/* #ww{
+    background-color: blanchedalmond;
+}
+/* class based slection */
+/* .tits{
+    background-color: chartreuse;
+} 
+/* goup based scelection  */
+/* #ww , .tits , ul{
+    background-color: rgba(117, 46, 46, 0.83);
+} */
+ .tits{
+    background-color: rgb(184, 14, 178);
+ }
+.tits{
+    background-color: hsla(225, 88%, 50%, 0.632);
+}
+h1{
+    font-size: 44px;
+
+}
+ul{
+    font-size: 20px;
+
+}
+html{
+    font-size: 20px;
+}
+li{
+    font-size: 2em;
+}
+/* .tits{
+    font-size: 2rem;
+} */
+ 

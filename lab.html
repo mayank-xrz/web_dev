@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- sets character encoding so special characters (like &copy;) render correctly-->
+    <title>College Examination Dashboard</title>
+    <style>
+        /* Element selector for whole page */ 
+        body {                                             
+            font-family: Arial, sans-serif;
+            margin: 0; /* removes the default margin of the browser */
+            background-color: #fafafa;
+        }
+
+        h2, h3 { /* only apply to h2 and h3 so basicly child css*/
+            color: #22223b;
+        }
+
+        /* ID selector - target unique element */
+        #dashboard-header {
+            background-color: #22223b;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 8px solid #4a4e69;
+        }
+
+        /* Class selector - (classes can be called again and again like unique ids)navigation */
+        .dashboard-nav {
+            background-color: #4a4e69;
+            padding: 12px 29px; /* top 12 and biottom 29*/
+            text-align: center;
+        }
+
+        .dashboard-nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 12px;  /* spaces the nav links horizontally without adding vertical margin.*/
+        }
+
+        /* Student profile card - box model: margin, padding, border, width */
+        #student-card {
+            margin: 20px auto; /* 20px vertical margin and auto for left or right horizontally centers the block (this only works because width is explicitly set*/
+            padding: 15px;
+            border: 2px solid #9a8c98;
+            width: 40%;
+            background-color: #f2e9e4;
+            border-radius: 6px; /* slightly rounded */
+        }
+
+        #student-card img {
+            width: 80px;
+            border-radius: 50%;
+            vertical-align: middle;
+            margin-right: 15px;
+        }
+
+        /* Class selector - for h3 section headings */
+        .section-heading {
+            color: #4a4e69;
+            border-bottom: 2px solid #9a8c98;
+            padding-bottom: 5px;
+            margin: 25px 20px 10px;  /* three-value shorthand: top 25px, left/right 20px, bottom 10px*/
+        }
+
+        /* Results table styling*/
+        table {
+            border-collapse: collapse; /* merges adjacent cell borders into single lines instead of doubled borders (default behavior) */
+            width: 70%;
+            margin: 10px auto 20px;
+        }
+
+        th, td { /* styles both header and data cell*/
+            border: 1px solid #9a8c98;
+            padding: 8px 12px;
+            text-align: center;
+        }
+
+        /* ID selector - table header row */
+        #results-table thead {
+            background-color: #4a4e69;
+            color: white;
+        }
+
+        /* Class selector - subject list */
+        .subject-list {
+            width: 60%;
+            margin: 0 auto 20px;
+            padding: 10px 30px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+
+        /* Class selector - aside instructions */
+        .instructions {
+            margin: 20px auto;
+            padding: 15px 20px;
+            border: 2px dashed #c9ada7;
+            width: 50%;
+            background-color: #fff8f5;
+        }
+
+        /* ID selector - footer */
+        #dashboard-footer {
+            background-color: #22223b;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header id="dashboard-header"> <!--emantic tag-->
+        <h1>ABC College of Engineering</h1>
+        
+    </header>
+
+    <nav class="dashboard-nav"> <!--semantic tag for navigation and herf is anchor link click it an jump to the id -->
+        <a href="#home">Home</a>
+        <a href="#students">Students</a>
+        <a href="#examination">Examination</a>
+        <a href="#results">Results</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main> <!--primary page content -->
+        <h3 class="section-heading" id="students">Student Information</h3>
+        <section id="student-card">
+            <img src="student.jpg" alt="Student photo">
+            <strong>Name:</strong> Mayank<br>
+            <strong>USN:</strong> 1BC23CS101<br>
+            <strong>Branch:</strong> Computer Science &amp; AI<br>
+            <strong>Semester:</strong> 3rd Semester
+        </section>
+
+        <h3 class="section-heading" id="examination">Examination Results</h3>
+        <table id="results-table">
+            <caption>Semester Examination Results</caption>
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Internal</th>
+                    <th>External</th>
+                    <th>Total</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Web Development</td>
+                    <td>25</td>
+                    <td>65</td>
+                    <td>90</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>DBMS</td>
+                    <td>22</td>
+                    <td>58</td>
+                    <td>80</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>Operating Systems</td>
+                    <td>20</td>
+                    <td>55</td>
+                    <td>75</td>
+                    <td>B+</td>
+                </tr>
+                <tr>
+                    <td>Computer Networks</td>
+                    <td>24</td>
+                    <td>60</td>
+                    <td>84</td>
+                    <td>A</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 class="section-heading">Subjects</h3>
+        <ul class="subject-list">
+            <li>Web Development</li>
+            <li>DBMS</li>
+            <li>Operating Systems</li>
+            <li>Computer Networks</li>
+        </ul>
+
+        <aside class="instructions">
+            <h3>Important Instructions</h3>
+            <ul>
+                <li>Carry your admit card and college ID to every exam.</li>
+                <li>Reach the exam hall at least 15 minutes before the scheduled time.</li>
+                <li>Mobile phones and smart devices are strictly not allowed.</li>
+                <li>Use only a blue or black pen for writing answers.</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer id="dashboard-footer">
+        <p>&copy; 2026 ABC College of Engineering</p>
+    </footer>
+</body>
+</html>
