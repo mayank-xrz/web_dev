@@ -1,0 +1,32 @@
+*{
+    padding: 10px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.container{
+    display: grid;
+    padding: 10px;
+    grid-template-rows: 1fr  1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    background-color: pink;
+    height: 450px;
+    width: 450px;
+     
+}
+.firstbox{
+    background-color: orange;
+}
+.scndbox{
+    background-color: aqua;
+}
+.thirdbox{
+    background-color: brown;
+
+}
+.sixbox{
+    background-color: greenyellow;
+}
